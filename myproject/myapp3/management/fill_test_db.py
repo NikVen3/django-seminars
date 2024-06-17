@@ -1,7 +1,7 @@
 import random
 
 from django.core.management.base import BaseCommand
-from myapp.models import Client, Product, Order, OrderProducts
+from myapp1.models import Client, Product, Order, OrderProducts
 from datetime import datetime, timedelta
 
 # максимум продуктов в заказе

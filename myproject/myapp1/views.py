@@ -6,9 +6,9 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, filename='logger.log', filemode='a', format='%(levelname)s %(message)s')
 
 
-def seminar1(request):
+def myapp1(request):
     logger.info(f'{request} request received')
-    return HttpResponse("Seminar1 page")
+    return HttpResponse("myapp1 page")
 
 
 def heads_tails(request):

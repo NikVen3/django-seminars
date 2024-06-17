@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'seminar1',
+    'myapp1', 'myproject','myapp2','myapp3','myapp4',
 ]
 
 MIDDLEWARE = [
@@ -130,39 +130,39 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'verbose': {
-            'format': '{levelname} {asctime} {module} {process} {thread}{message}',
-            'style': '{',
-        },
-        'simple': {
-            'format': '%(levelname)s %(message)s'
-        },
-    },
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-            'formatter': 'verbose', # добавлен параметр formatter
-        },
-        'file': {
-            'class': 'logging.FileHandler',
-            'filename': './log/django.log',
-            'formatter': 'verbose',  # добавлен параметр formatter
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['console', 'file'],
-            'level': 'INFO',
-        },
-        'myapp': {
-            'handlers': ['console', 'file'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-    },
+     'version': 1,
+     'disable_existing_loggers': False,
+     'formatters': {
+         'verbose': {
+             'format': '{levelname} {asctime} {module} {process} {thread}{message}',
+             'style': '{',
+         },
+         'simple': {
+             'format': '%(levelname)s %(message)s'
+         },
+     },
+     'handlers': {
+         'console': {
+             'class': 'logging.StreamHandler',
+             'formatter': 'verbose', # добавлен параметр formatter
+         },
+         'file': {
+             'class': 'logging.FileHandler',
+             'filename': './log/django.log',
+
+         },
+     },
+     'loggers': {
+         'django': {
+             'handlers': ['console', 'file'],
+             'level': 'INFO',
+         },
+         'myapp': {
+             'handlers': ['console', 'file'],
+             'level': 'DEBUG',
+             'propagate': True,
+         },
+     },
 }
 
 
